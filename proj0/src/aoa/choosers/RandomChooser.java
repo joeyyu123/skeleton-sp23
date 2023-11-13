@@ -8,8 +8,7 @@ import java.util.List;
 
 public class RandomChooser implements Chooser {
     private final String chosenWord;
-    private String pattern;
-    private List<Character> guesses = new ArrayList<>();
+    private final List<Character> guesses = new ArrayList<>();
 
     public RandomChooser(int wordLength, String dictionaryFile) {
         // TODO: Fill in/change this constructor.
@@ -51,7 +50,7 @@ public class RandomChooser implements Chooser {
     @Override
     public String getPattern() {
         // TODO: Fill in this method.
-        pattern = chosenWord;
+        String pattern = chosenWord;
         for (int i=0; i<chosenWord.length(); i++){
             if (guesses.contains(chosenWord.charAt(i))){
                 char c = chosenWord.charAt(i);
