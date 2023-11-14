@@ -58,7 +58,7 @@ public class PAGALetterFreqGuesser implements Guesser {
         }
 
         for (String word : matchedWords){
-            for (Character letter : word.toCharArray()){
+            for (char letter : word.toCharArray()){
                 if (map.containsKey(letter)){
                     map.put(letter, map.get(letter) + 1);
                 }else {
