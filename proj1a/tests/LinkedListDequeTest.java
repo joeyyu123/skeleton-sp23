@@ -133,7 +133,7 @@ public class LinkedListDequeTest {
     @Test
     public void removeLastTest() {
         Deque<Integer> lld1 = new LinkedListDeque<>();
-        int x;
+
         lld1.addLast(0);   // [0]
         lld1.addLast(1);   // [0, 1]
         lld1.addFirst(-1); // [-1, 0, 1]
